@@ -6,8 +6,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  const validUsername = 'user';
-  const validPassword = 'password';
+  const validUsername = 'CNSS';
+  const validPassword = 'Class10Batch2080';
 
   if (username === validUsername && password === validPassword) {
     document.getElementById('message').textContent = 'Login successful!';

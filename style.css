@@ -21,3 +21,38 @@
 .photo {
   margin-top: 20px;
 }
+.container {
+  display: flex;
+  flex-direction: column; /* Display items in a column */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.container div {
+  margin: 10px 0; /* Add margin between items */
+  border: 1px solid black; /* Add border around each div */
+  padding: 10px; /* Add padding inside each div */
+}
+
+.container img {
+  width: 100px; /* Set the width of the image */
+  height: 100px; /* Set the height of the image */
+  object-fit: cover; /* Maintain the aspect ratio and cover the image */
+}
+
+.container p {
+  margin: 10px 0; /* Add margin inside each div */
+}
+
+/* Add additional custom styles here */
+.container div:nth-child(odd) {
+  background-color: ; /* Apply background color to odd divs */
+}
+
+.container div:nth-child(even) {
+  background-color: ; /* Apply background color to even divs */
+}
+
+.container img {
+  margin-bottom: 5px; /* Add margin below each image */
+}

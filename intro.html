@@ -1,66 +1,175 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Intro</title>
-  <style>
-    body {
-      height: 100vh;
-      width: 100vw;
-      background-color: black;
-      background-image: url("my_image.jpg");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      <style>
+        .container {
+          display: flex;
+          flex-direction: column; /* Display items in a column */
+          align-items: center; /* Center items horizontally */
+          text-align: center; /* Center text */
+        }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+        .container div {
+          margin: 10px 0; /* Add margin between items */
+          border: 1px solid black; /* Add border around each div */
+          padding: 10px; /* Add padding inside each div */
+        }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
+        .container img {
+          width: 100px; /* Set the width of the image */
+          height: 100px; /* Set the height of the image */
+          object-fit: cover; /* Maintain the aspect ratio and cover the image */
+        }
 
-    .glass-input {
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-    }
+        .container p {
+          margin: 5px 0; /* Add margin inside each div */
+        }
 
-    .photo {
-      width: 200px;
-      height: 200px;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="overlay"></div>
-    <div class="glass-input">
-      <img src="/Users/your_username/Desktop/image1.jpg" alt="" class="photo">
-      <p>Name: John Doe</p>
-      <p>Occupation: Software Engineer</p>
-      <p>Location: San Francisco, CA</p>
+        /* Add additional custom styles here */
+        .container div:nth-child(odd) {
+          background-color: ; /* Apply background color to odd divs */
+        }
 
-      <img src="image2.jpg" alt="" class="photo">
-      <p>Name: Jane Doe</p>
-      <p>Occupation: Doctor</p>
-      <p>Location: New York, NY</p>
+        .container div:nth-child(even) {
+          background-color: ; /* Apply background color to even divs */
+        }
 
-      <!-- You can add as many photos and introductions as you want -->
-    </div>
+        .container img {
+          margin-bottom: 5px; /* Add margin below each image */
+        }
+      </style>
+      <div class="container">
+        <div>
+          <img src="aarjan.jpg" alt="Image 1">
+          <p>𝙉𝙖𝙢𝙚:𝘼𝙖𝙧𝙟𝙖𝙣 𝙉𝙚𝙪𝙥𝙖𝙣𝙚</p>
+          <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙘𝙝𝙪𝙖𝙘𝙝𝙚𝙮</p>
+          <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘽𝙝𝙖𝙠𝙩𝙖𝙥𝙪𝙧,𝙣𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+          <p>𝙥𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙚𝙚𝙙 𝙩𝙤 𝙪𝙥𝙙𝙖𝙩𝙚</p>
+        </div>
+        <div>
+          <img src="shreejana.jpg" alt="Image 2">
+          <p>𝙉𝙖𝙢𝙚:𝙎𝙝𝙧𝙚𝙚𝙟𝙖𝙣𝙖 𝘼𝙖𝙙𝙝𝙞𝙠𝙖𝙧𝙞</p>
+          <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝘿𝙖𝙡𝙡𝙞</p>
+          <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝘽𝙚𝙨𝙞</p>
+          <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+        </div>
+        <div>
+          <img src="sasi.jpg" alt="Image 3">
+          <p>𝙉𝙖𝙢𝙚:𝙎𝙖𝙨𝙞 𝙎𝙞𝙡𝙬𝙖𝙡</p>
+          <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+          <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝙆𝙈𝘾</p>
+          <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+        </div></div>
+<div class="container">
+          <div>
+            
+            <img src="manisha.jpg" alt="Image 4">
+            <p>𝙉𝙖𝙢𝙚:𝙈𝙖𝙣𝙞𝙨𝙝𝙖 𝙍𝙖𝙣𝙖 </p>
+            <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙃𝙞𝙥𝙥𝙤</p>
+            <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝘽𝙚𝙨𝙞</p>
+            <p>𝙥𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙚𝙚𝙙 𝙩𝙤 𝙪𝙥𝙙𝙖𝙩𝙚</p>
+          </div>
+          <div>
+            <img src="roshan.jpg" alt="Image 5">
+            <p>𝙉𝙖𝙢𝙚:𝙎𝙝𝙧𝙚𝙚𝙟𝙖𝙣𝙖 𝘼𝙖𝙙𝙝𝙞𝙠𝙖𝙧𝙞</p>
+            <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝘿𝙖𝙡𝙡𝙞</p>
+            <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝘽𝙚𝙨𝙞</p>
+            <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+          </div>
+          <div>
+            <img src="panday.jpg" alt="Image 6">
+            <p>𝙉𝙖𝙢𝙚:𝙋𝙧𝙖𝙨𝙨𝙞𝙙𝙝𝙖 𝙥𝙖𝙣𝙙𝙖𝙮</p>
+            <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙈𝙖𝙨𝙠 𝙢𝙖𝙣</p>
+            <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝘽𝙚𝙨𝙞</p>
+            <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+          </div>
+        </div><div class="container">
+  <div>
+    <img src="rabina.jpg" alt="Image 7">
+    <p>𝙉𝙖𝙢𝙚:𝙍𝙖𝙗𝙞𝙣𝙖 𝘼𝙖𝙧𝙮𝙖𝙡 </p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙠𝙖𝙡𝙞 𝙗𝙪𝙙𝙞</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝘽𝙝𝙖𝙠𝙩𝙖𝙥𝙪𝙧</p>
+    <p>𝙥𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙚𝙚𝙙 𝙩𝙤 𝙪𝙥𝙙𝙖𝙩𝙚</p>
   </div>
-</body>
-</html>
+  <div>
+    <img src="anil.jpg" alt="Image 8">
+    <p>𝙉𝙖𝙢𝙚:𝘼𝙣𝙞𝙡 𝙇𝙖𝙢𝙖</p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙃𝙖𝙩𝙩𝙞,𝙂𝙖𝙞𝙙𝙖</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝘽𝙚𝙨𝙞</p>
+    <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+  </div>
+  <div>
+    <img src="samip.jpg" alt="Image 9">
+    <p>𝙉𝙖𝙢𝙚:𝙎𝙖𝙢𝙞𝙥 𝙍𝙖𝙞</p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙍𝙖𝙪𝙩𝙚𝙮,𝙏𝙤𝙭𝙞𝙘</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝙗𝙚𝙨𝙞</p>
+    <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+  </div>
+</div>
+      </div><div class="container">
+  <div>
+    <img src="samundra.jpg" alt="Image 10">
+    <p>𝙉𝙖𝙢𝙚:𝙎𝙖𝙢𝙪𝙣𝙙𝙧𝙖 𝙎𝙝𝙖𝙧𝙢𝙖</p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝙈𝙖𝙣𝙠𝙖𝙡 𝙘𝙝𝙤𝙬𝙠</p>
+    <p>𝙥𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙚𝙚𝙙 𝙩𝙤 𝙪𝙥𝙙𝙖𝙩𝙚</p>
+  </div>
+  <div>
+    <img src="kribish.jpg" alt="Image 11">
+    <p>𝙉𝙖𝙢𝙚:𝙆𝙧𝙞𝙗𝙞𝙨𝙝 𝙂𝙝𝙞𝙢𝙚𝙧𝙚</p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝘽𝙖𝙝𝙪𝙣</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝙍𝙤𝙠𝙠𝙖 𝙂𝙖𝙪𝙣</p>
+    <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+  </div>
+  <div>
+    <img src="biraj.jpg" alt="Image 12">
+    <p>𝙉𝙖𝙢𝙚:𝘽𝙞𝙧𝙖𝙟 𝙎𝙪𝙧𝙠𝙝𝙚𝙩𝙞</p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙈𝙤𝙩𝙚𝙮,𝙂𝙚𝙣𝙙𝙚𝙮</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+    <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+          
+        </div>
+</div>
+<div class="container">
+  <div>
+    <img src="navraj.jpg" alt="Image 13">
+    <p>𝙉𝙖𝙢𝙚:𝙉𝙖𝙫𝙧𝙖𝙟 𝙈𝙖𝙡𝙡𝙖</p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘽𝙝𝙖𝙠𝙩𝙖𝙥𝙪𝙧,𝙣𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+    <p>𝙥𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙚𝙚𝙙 𝙩𝙤 𝙪𝙥𝙙𝙖𝙩𝙚</p>
+  </div>
+  <div>
+    <img src="mamdip.jpg" alt="Image 14">
+    <p>𝙉𝙖𝙢𝙚:𝙈𝙖𝙣𝙙𝙞𝙥 𝘿𝙝𝙪𝙣𝙜𝙚𝙡</p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝘽𝙚𝙨𝙞</p>
+    <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+  </div>
+  <div>
+    <img src="anish.jpg" alt="Image 15">
+    <p>𝙉𝙖𝙢𝙚:𝘼𝙣𝙞𝙨𝙝 𝙎𝙝𝙧𝙚𝙨𝙩𝙝𝙖</p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝘽𝙚𝙨𝙞</p>
+    <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+  </div>
+</div>
+<div class="container">
+  <div>
+    <img src="pasang.jpg" alt="Image 16">
+    <p>𝙉𝙖𝙢𝙚:𝙋𝙖𝙨𝙖𝙣𝙜 𝙠𝙖𝙧𝙢𝙖 </p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘽𝙝𝙖𝙠𝙩𝙖𝙥𝙪𝙧,𝙣𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+    <p>𝙥𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙚𝙚𝙙 𝙩𝙤 𝙪𝙥𝙙𝙖𝙩𝙚</p>
+  </div>
+  <div>
+    <img src="sujina.jpg" alt="Image 16">
+    <p>𝙉𝙖𝙢𝙚:𝙎𝙪𝙟𝙞𝙣𝙖 𝙋𝙖𝙣𝙙𝙞𝙩</p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:𝘿𝙪𝙬𝙖𝙠𝙤𝙩,𝙈𝙖𝙝𝙖𝙣𝙠𝙖𝙡 𝙘𝙝𝙤𝙬𝙠</p>
+    <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:𝙉𝙤𝙩 𝙛𝙤𝙪𝙣𝙙</p>
+  </div>
+  <div>
+    <img src=".jpg" alt="Image 18">
+    <p>𝙉𝙖𝙢𝙚: </p>
+    <p>𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚:</p>
+    <p>𝘼𝙙𝙙𝙧𝙚𝙨𝙨:</p>
+    <p>𝙋𝙝𝙤𝙣𝙚𝙣𝙪𝙢𝙗𝙚𝙧:</p>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Page 3</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to Page 3</h2>
+    <div id="usernameDisplay"></div>
+  </div>
+
+  <script>
+    // Fetch the saved username from the server or another file
+    fetch('get-username.php') // Updated path to get-username.php
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        var username = data.username;
+        document.getElementById('usernameDisplay').innerText = 'Username: ' + username;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('usernameDisplay').innerText = 'Error retrieving username.';
+      });
+  </script>
+</body>
+</html>

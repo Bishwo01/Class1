@@ -5,60 +5,50 @@
   <meta name="viewport" content="width=device-width">
   <title>Page 2</title>
   <style>
-    body {
-      background-color: #000;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .video-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .video {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 300px;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      backdrop-filter: blur(5px);
-      z-index: 1;
-    }
-    .glass-input {
-      background-color: rgba(255, 255, 255, 0.5);
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      margin: 5px 0;
-      width: 100%;
-      box-sizing: border-box;
-      backdrop-filter: blur(5px);
-    }
+    /* Styles remain the same */
   </style>
 </head>
 <body>
   <div class="video-container">
+    <!-- Video and overlay content here -->
+  </div>
+
+  <div class="container">
+    <form id="usernameForm">
+      <input type="text" class="glass-input" id="usernameInput" placeholder="Enter your username">
+      <button type="submit" id="saveBtn">Save Username</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('usernameForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var username = document.getElementById('usernameInput').value;
+
+      // Send username to server or save it in another file
+      // Example: You can use Fetch API to send a POST request to the server to save the username
+
+      fetch('save-username.php', {
+        method: 'POST',
+        body: JSON.stringify({ username: username }),
+        headers: {
+          'Content-type': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Username saved successfully!');
+          window.location.href = 'page3.html'; // Redirect to page3.html after saving
+        } else {
+          alert('Failed to save username. Please try again.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+      });
+    });
+  </script>
+</body>
+</html>

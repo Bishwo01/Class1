@@ -1,46 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Index</title>
-  <style>
-    body {
-      height: 100vh;
-      width: 100vw;
-      background-color: black;
-      background-image: url("my_image.jpg");
-      background-size: cover;
-      background-position: center;
-    }
-
-    #play-button {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    #video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-  </style>
+    <title>My Webpage</title>
 </head>
-<body>
-  <video id="video" src="dark.mp4" autoplay loop></video>
-  <!-- rest of the html before -->
-
-  <video autoplay loop muted playsInline id="myVideo">
-    <source src="legend.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <!-- rest of code after -->
-  <button id="play-button" onclick="window.location.href='page1.html'"></button>
+<body style="background-image: url('background.jpg');">
 </body>
 </html>
