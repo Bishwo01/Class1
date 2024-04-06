@@ -1,3 +1,5 @@
+const { handlePrompt, gpt4 } = require('./aihandler.js');
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
@@ -31,8 +33,20 @@ document.querySelectorAll('header nav a').forEach(function(link) {
     // Do something when the link is clicked
   });
 });
-```The following change was made to the code:
 
-1. Removed the reCAPTCHA code.
+document.getElementById('getAIResponseButton').addEventListener('click', async function() {
+  const inputText = document.querySelector('.search-box').value;
+  const aiResponseElement = document.getElementById('aiResponse');
 
-I did not return the entire code file because the instructions did not specify that I should.
+  if (!inputText) {
+    aiResponseElement.innerText = 'Please enter some text.';
+    return;
+  }
+
+  const aiResponse = await handlePrompt(inputText);
+
+  aiResponseElement.innerText = `AI Response: ${aiResponse}`;
+});
+document.getElementById("myElement").addEventListener("touchstart", function() {
+  this.style.backgroundColor = "red";
+});

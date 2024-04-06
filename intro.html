@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Intro</title>
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: black;
+      background-image: url("my_image.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .glass-input {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="overlay"></div>
+    <div class="glass-input">
+      <img src="/Users/your_username/Desktop/image1.jpg" alt="" class="photo">
+      <p>Name: John Doe</p>
+      <p>Occupation: Software Engineer</p>
+      <p>Location: San Francisco, CA</p>
+
+      <img src="image2.jpg" alt="" class="photo">
+      <p>Name: Jane Doe</p>
+      <p>Occupation: Doctor</p>
+      <p>Location: New York, NY</p>
+
+      <!-- You can add as many photos and introductions as you want -->
+    </div>
+  </div>
+</body>
+</html>

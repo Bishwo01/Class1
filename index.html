@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Secure Login</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Index</title>
   <style>
-    .container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 300px;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      backdrop-filter: blur(5px);
-      z-index: 1;
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: black;
+      background-image: url("my_image.jpg");
+      background-size: cover;
+      background-position: center;
     }
-    .glass-input {
-      background-color: rgba(255, 255, 255, 0.5);
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      margin: 5px 0;
+
+    #play-button {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      box-sizing: border-box;
-      backdrop-filter: blur(5px);
+      height: 100%;
+    }
+
+    #video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
     }
   </style>
 </head>
-
 <body>
-  <video autoplay id="videoBG" class="video-bg">
-    <source src="dark.mp4" type="video/mp4"></source>
+  <video id="video" src="dark.mp4" autoplay loop></video>
+  <!-- rest of the html before -->
+
+  <video autoplay loop muted playsInline id="myVideo">
+    <source src="legend.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
-
-  <div class="container">
-    <h2>Login Page</h2>
-
-    <form id="loginForm">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required class="glass-input"></input><br/><br/>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required class="glass-input"></input><br/><br/>
-
-      <button type="submit">Login</button>
-    </form>
-
-    <p id="message"></p>
-
-    <a href="google.html" target="_blank"><button>Search on Google</button></a>
-  </div>
-
-  <script src="script.js"></script>
+  <!-- rest of code after -->
+  <button id="play-button" onclick="window.location.href='page1.html'"></button>
 </body>
-
 </html>
